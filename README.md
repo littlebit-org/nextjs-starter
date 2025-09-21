@@ -46,14 +46,4 @@ When you're ready to deploy, connect the repository to Vercel (or your preferred
 
 Vercel will detect the Next.js project automatically; other hosts should run the same build command before serving `.next/` via `npm run start`.
 
-## Share as a GitHub template (optional)
-1. Push the repository to GitHub.
-2. Mark it as a template:
-   - GitHub CLI:
-     ```bash
-     gh repo edit <owner>/<repo> --template true
-     ```
-   - Web UI: navigate to **Settings → Template repository → Enable Template repository**.
-3. Optionally add a README badge, issues templates, or automation for consumers of your starter.
-
 Happy shipping!
