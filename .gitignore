@@ -1,0 +1,34 @@
+# Node dependencies (reinstallable packages)
+node_modules
+
+# Hosting metadata (managed by Vercel)
+.vercel
+
+# Next.js build outputs (recreated by build/export)
+.next
+.next/cache
+out
+.turbo
+.swc
+
+# Tool caches (local Playwright, lint, etc.)
+.playwright-mcp
+.eslintcache
+
+# Logs (debug output from JS package managers)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (hold secrets or local overrides)
+.env
+.env*.local
+
+# Test artifacts (ephemeral coverage data)
+coverage
+
+# Editor & OS metadata (developer machine specific)
+.DS_Store
+.idea
+.vscode
