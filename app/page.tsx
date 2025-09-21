@@ -10,11 +10,11 @@ export default function HomePage() {
         <span className="rounded-full border px-3 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
           Next.js + shadcn/ui
         </span>
-        <h1 className="text-4xl font-bold sm:text-5xl">Can I Drink?</h1>
+        <h1 className="text-4xl font-bold sm:text-5xl">Your Project Starts Here</h1>
         <p className="max-w-xl text-pretty text-muted-foreground">
-          You now have a Vercel-ready Next.js app scaffold with Tailwind CSS, TypeScript, and
-          shadcn/ui components. Start building by editing <code>app/page.tsx</code> or explore
-          the component library to ship faster.
+          This minimal starter ships with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui.
+          Edit <code>app/page.tsx</code> to begin shaping your product and use the theme toggle to
+          preview light and dark modes.
         </p>
       </div>
       <div className="flex flex-col items-center gap-4 sm:flex-row">

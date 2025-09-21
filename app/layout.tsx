@@ -9,8 +9,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Can I Drink?",
-  description: "A Next.js app scaffold with shadcn/ui deployed on Vercel"
+  title: "Next.js Starter Template",
+  description: "A minimal Next.js + shadcn/ui starter ready for customization"
 };
 
 interface RootLayoutProps {
