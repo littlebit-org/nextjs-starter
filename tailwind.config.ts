@@ -58,6 +58,22 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)"
       },
+      fontFamily: {
+        primary: ["var(--font-primary)", ...fontFamily.sans],
+        accent: ["var(--font-accent)", "var(--font-primary)", ...fontFamily.sans],
+        mono: ["var(--font-mono)", ...fontFamily.mono],
+        sans: ["var(--font-primary)", ...fontFamily.sans]
+      },
+      fontSize: {
+        h1: ["var(--type-h1)", { lineHeight: "1.15", letterSpacing: "-0.01em", fontWeight: "600" }],
+        h2: ["var(--type-h2)", { lineHeight: "1.18", letterSpacing: "-0.01em", fontWeight: "600" }],
+        h3: ["1.5rem", { lineHeight: "1.2", fontWeight: "600" }],
+        h4: ["1.25rem", { lineHeight: "1.25", fontWeight: "600" }],
+        body: ["1rem", { lineHeight: "1.5" }],
+        "body-sm": ["0.875rem", { lineHeight: "1.45" }],
+        label: ["0.75rem", { lineHeight: "1.4", letterSpacing: "0.04em", fontWeight: "500" }],
+        mono: ["0.875rem", { lineHeight: "1.4" }]
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -72,9 +88,6 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out"
       },
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans]
-      }
     }
   },
   plugins: [require("tailwindcss-animate")]
