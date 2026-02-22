@@ -7,18 +7,15 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
-
-  const handleToggle = React.useCallback(() => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  }, [setTheme, theme]);
+  const { setTheme, resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   return (
     <Button
       variant="ghost"
       size="icon"
       aria-label="Toggle theme"
-      onClick={handleToggle}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
       className="relative h-10 w-10"
     >
       <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

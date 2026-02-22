@@ -14,6 +14,7 @@ out
 # Tool caches (local Playwright, lint, etc.)
 .playwright-mcp
 .eslintcache
+*.tsbuildinfo
 
 # Logs (debug output from JS package managers)
 npm-debug.log*
