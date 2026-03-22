@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link "littlebit" [ref=e6] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e7]: Product clarity for teams that need cleaner flows, clearer wording, and less rework.
+        - button "Toggle color theme" [ref=e8]:
+          - img [ref=e9]
+          - generic [ref=e15]: Toggle color theme
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - heading "Clearer products. Less rework." [level=1] [ref=e19]
+            - paragraph [ref=e20]: littlebit helps teams make digital products easier to understand and easier to keep moving.
+          - generic [ref=e21]:
+            - link "Bring the messy version" [ref=e22] [cursor=pointer]:
+              - /url: "#contact"
+            - link "See how we work" [ref=e23] [cursor=pointer]:
+              - /url: "#how-we-work"
+          - paragraph [ref=e24]: Clearer flows, cleaner wording, fewer points where work gets stuck.
+        - complementary [ref=e25]:
+          - paragraph [ref=e26]: Case study draft
+          - paragraph [ref=e27]: Checkout completion was flat for three quarters. The form kept asking for certainty where users only had partial information.
+          - paragraph [ref=e28]: We changed the sequence, rewrote the labels, and cut two decisions.
+          - paragraph [ref=e29]: Most digital friction is not mysterious. It usually starts with a messy decision, a vague sentence, or a flow that keeps asking too much.
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - heading "When a product feels complicated, the problem is usually not the user." [level=2] [ref=e32]
+          - paragraph [ref=e33]: It is the wording, the flow, or the system underneath it. We work on those.
+        - generic [ref=e34]:
+          - article [ref=e35]:
+            - heading "Vague language" [level=3] [ref=e36]
+            - paragraph [ref=e37]: The product knows what it means. The user does not. That gap is expensive.
+          - article [ref=e38]:
+            - heading "Too many decisions" [level=3] [ref=e39]
+            - paragraph [ref=e40]: The flow asks for certainty before it has earned enough context to ask for it.
+          - article [ref=e41]:
+            - heading "Systems that outgrew their naming" [level=3] [ref=e42]
+            - paragraph [ref=e43]: The product changed faster than the labels, the rules, and the team memory around it.
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "How we work" [level=2] [ref=e46]
+          - paragraph [ref=e47]: Lead with the point. Name the friction. Explain the consequence. Then make the next step easy to see.
+        - generic [ref=e48]:
+          - article [ref=e49]:
+            - paragraph [ref=e50]: "01"
+            - generic [ref=e51]:
+              - heading "See the friction" [level=3] [ref=e52]
+              - paragraph [ref=e53]: We read the flow, the wording, and the product logic together so the real constraint shows up.
+          - article [ref=e54]:
+            - paragraph [ref=e55]: "02"
+            - generic [ref=e56]:
+              - heading "Decide what changes" [level=3] [ref=e57]
+              - paragraph [ref=e58]: We cut options, rewrite labels, and tighten the path until the next step is obvious.
+          - article [ref=e59]:
+            - paragraph [ref=e60]: "03"
+            - generic [ref=e61]:
+              - heading "Ship the useful version" [level=3] [ref=e62]
+              - paragraph [ref=e63]: The result should be easier to use, easier to explain, and easier to keep moving.
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: We stay small on purpose. Fewer layers. More judgment. Less theatre.
+        - heading "Bring the messy version." [level=2] [ref=e67]
+        - paragraph [ref=e68]: littlebit will help you decide what stays, what goes, and what ships.
+        - generic [ref=e69]:
+          - link "Review the brief" [ref=e70] [cursor=pointer]:
+            - /url: "#top"
+          - link "Read how we work" [ref=e71] [cursor=pointer]:
+            - /url: "#how-we-work"
+  - alert [ref=e72]

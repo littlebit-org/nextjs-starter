@@ -1,43 +1,23 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Geist, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { fontVariables } from "@/lib/fonts";
 import { getMetadataBase } from "@/lib/site";
 
 import "./globals.css";
 
 const metadataBase = getMetadataBase();
 
-const geist = Geist({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-primary",
-  display: "swap"
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-accent",
-  display: "swap"
-});
-
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-mono",
-  display: "swap"
-});
-
 export const metadata: Metadata = {
   metadataBase,
   title: {
-    default: "Next.js Starter Template",
-    template: "%s | Next.js Starter Template"
+    default: "littlebit",
+    template: "%s | littlebit"
   },
-  description: "A production-ready Next.js 16 + shadcn/ui starter for fast project setup.",
-  applicationName: "Next.js Starter Template",
+  description:
+    "littlebit helps teams make digital products easier to understand and easier to keep moving.",
+  applicationName: "littlebit",
   referrer: "origin-when-cross-origin",
   alternates: {
     canonical: "/"
@@ -45,14 +25,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Next.js Starter Template",
-    title: "Next.js Starter Template",
-    description: "A production-ready Next.js 16 + shadcn/ui starter for fast project setup."
+    siteName: "littlebit",
+    title: "littlebit",
+    description:
+      "littlebit helps teams make digital products easier to understand and easier to keep moving."
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next.js Starter Template",
-    description: "A production-ready Next.js 16 + shadcn/ui starter for fast project setup."
+    title: "littlebit",
+    description:
+      "littlebit helps teams make digital products easier to understand and easier to keep moving."
   }
 };
 
@@ -61,8 +43,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   colorScheme: "light dark",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0d13" }
+    { media: "(prefers-color-scheme: light)", color: "#efeee9" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f1316" }
   ]
 };
 
@@ -72,10 +54,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geist.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} font-primary antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning className={fontVariables}>
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
